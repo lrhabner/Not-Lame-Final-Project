@@ -3,12 +3,10 @@ library("data.table")
 
 
 # Reading in all necessary csv files
-data_100_sample <- fread("../data/nba_2016_2017_100.csv")
 data_salary <- fread("../data/nba_2017_salary.csv")
 data_player_stats <- fread("../data/nba_2017_players_stats_combined.csv")
 data_twitter <- fread("../data/nba_2017_twitter_players.csv")
-data_attendance <- fread("../data/nba_2017_attendance.csv")
-data_att_val <- fread("../data/nba_2017_att_val.csv")
+data_attendance <- fread("../data/nba_2017_att_val.csv")
 data_pie <- fread("../data/nba_2017_pie.csv")
 
 
@@ -29,4 +27,14 @@ colnames(data_pie)[22] <- "PIE_2"
 data <- left_join(data, data_pie, by = "PLAYER")
 
 # Select only needed data
-data <- select(data, PLAYER, AGE, AGE_2, POSITION, POSITION_2, TEAM, TEAM_ABBREVIATION, SALARY, OFFRTG, DEFRTG, TWITTER_FAVORITE_COUNT, TWITTER_RETWEET_COUNT)
+data_player <- select(data, PLAYER, AGE, AGE_2, POSITION, POSITION_2, TEAM, TEAM_ABBREVIATION, SALARY, OFFRTG, DEFRTG, TWITTER_FAVORITE_COUNT, TWITTER_RETWEET_COUNT)
+rm(data_salary, data_player_stats, data_twitter, data_pie)
+
+data_team_twitter <- filter(data_player, !is.na(TWITTER_FAVORITE_COUNT))
+
+data_team_twitter <- group_by(data_team_twitter, TEAM_ABBREVIATION) %>%
+  summarize(
+    TWITTER_FAVORITE_COUNT_SUM = sum(TWITTER_FAVORITE_COUNT),
+    TWITTER_RETWEET_COUNT_SUM = sum(TWITTER_RETWEET_COUNT),
+    NUM_PLAYERS = n()
+  )
