@@ -1,3 +1,10 @@
+---
+title: "Not Lame Final Project"
+output: 
+  html_document:
+    self_contained: no
+---
+
 ``` {r include = FALSE}
 library("knitr")
 source("dataProcessing.R")
@@ -7,10 +14,10 @@ source("graphic3.R")
 
 ```
 
-### NOT LAME Final Project
+### Twitter and the NBA
 
 
-``` {r}
+``` {r results = 'asis'}
 createGraphic1()
 ```
 
