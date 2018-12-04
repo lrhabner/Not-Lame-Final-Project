@@ -27,7 +27,7 @@ colnames(data_pie)[22] <- "PIE_2"
 data <- left_join(data, data_pie, by = "PLAYER")
 
 # Select only needed data
-data_player <- select(data, PLAYER, AGE, AGE_2, POSITION, POSITION_2, TEAM, TEAM_ABBREVIATION, SALARY, OFFRTG, DEFRTG, TWITTER_FAVORITE_COUNT, TWITTER_RETWEET_COUNT)
+data_player <- select(data, PLAYER, AGE, AGE_2, POSITION, TEAM, TEAM_ABBREVIATION, SALARY, OFFRTG, DEFRTG, TWITTER_FAVORITE_COUNT, TWITTER_RETWEET_COUNT)
 rm(data_salary, data_player_stats, data_twitter, data_pie)
 
 data_team_twitter <- filter(data_player, !is.na(TWITTER_FAVORITE_COUNT))
