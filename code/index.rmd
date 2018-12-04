@@ -15,7 +15,7 @@ source("graph3.R")
 
 <center>
 
-# Twitter and the NBA
+# **Twitter and the NBA**
 ## Not Lame Final INFO 201 Project
 
 </br>
@@ -26,6 +26,8 @@ source("graph3.R")
 ``` {r results = 'asis', echo = FALSE}
 createGraphic1()
 ```
+
+##### In 2017, the team with the highest average audience turnout was the `r highest_audience$Team` while the team with the lowest average audience turnout was the `r lowest_audience$Team`. The `r highest_retweets$Team` had the highest median number of retweets on Twitter while the `r lowest_retweets$Team` had the lowest median number of retweets on Twitter. However, the `r highest_favorites$Team` had the highest median number of favorites on Twitter while the `r lowest_favorites$Team` had the lowest median number of favorites on Twitter.
 
 
 ### Do players who perform better on offense or defense experience more engagement with their Twitter accounts?
