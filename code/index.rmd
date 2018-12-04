@@ -1,5 +1,4 @@
 ---
-title: "Not Lame Final Project"
 output: 
   html_document:
     self_contained: no
@@ -7,29 +6,46 @@ output:
 
 ``` {r include = FALSE}
 library("knitr")
-source("dataProcessing.R")
+library("shiny")
 source("graphic1.R")
 source("graphic2.R")
-source("graphic3.R")
+source("graph3.R")
 
 ```
 
-### Twitter and the NBA
+<center>
 
+# Twitter and the NBA
+## Not Lame Final INFO 201 Project
 
-``` {r results = 'asis'}
+</br>
+</br>
+
+### Can the level of engagement with players' Twitter accounts predict their team's audience turnout?
+
+</center>
+
+``` {r results = 'asis', echo = FALSE}
 createGraphic1()
 ```
 
-``` {r}
+<center> 
+
+### Do players who perform better on offense or defense experience more engagement with their Twitter accounts?
+
+</center>
+
+``` {r echo = FALSE}
 createGraphic2()
 ```
 
-``` {r}
+<center>
+
+### Does a player's number of Twitter followers show a stronger correlation with their age or salary?
+
+</center>
+
+``` {r echo = FALSE}
 createGraphic3()
-```
-
-``` {r}
-
 ```
 
