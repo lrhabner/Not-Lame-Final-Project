@@ -8,7 +8,7 @@ output:
 library("knitr")
 library("shiny")
 source("graphic1.R")
-source("graphic2.R")
+#source("graphic2.R")
 source("graph3.R")
 
 ```
@@ -23,29 +23,24 @@ source("graph3.R")
 
 ### Can the level of engagement with players' Twitter accounts predict their team's audience turnout?
 
-</center>
-
 ``` {r results = 'asis', echo = FALSE}
 createGraphic1()
 ```
 
-<center> 
 
 ### Do players who perform better on offense or defense experience more engagement with their Twitter accounts?
 
-</center>
 
 ``` {r echo = FALSE}
-createGraphic2()
+#createGraphic2()
 ```
 
-<center>
 
 ### Does a player's number of Twitter followers show a stronger correlation with their age or salary?
 
-</center>
 
-``` {r echo = FALSE}
+``` {r results = 'asis', echo = FALSE}
 createGraphic3()
 ```
 
+</center>
