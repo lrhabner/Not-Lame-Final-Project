@@ -1,29 +1,29 @@
 #Do players who perform better on offense or defense experience 
 #more engagement with their Twitter accounts?
 
-library(ggplot2)
+library(dplyr)
+library(googleVis)
 
-off <- read.csv("../data/off.csv", stringsAsFactors = FALSE)
-def <- read.csv("../data/def.csv", stringsAsFactors = FALSE)
+dataset <- data_player %>% 
+           select(PLAYER, OFFRTG, DEFRTG, TWITTER_FAVORITE_COUNT, TWITTER_RETWEET_COUNT) %>%
+           filter(!is.na(TWITTER_FAVORITE_COUNT) & !is.na(TWITTER_RETWEET_COUNT))
 
-#make a graph about ratings and twitter retweet counts
-graph_retweet <- ggplot() +
-    geom_point(data = off, aes(x = OFF_RATING, y = TWITTER_RETWEET_COUNT)) +
-    geom_smooth(data = off, aes(x = OFF_RATING, y = TWITTER_RETWEET_COUNT), fill = "blue",
-                colour = "darkblue") +
-  geom_point(data = def, aes(x = DEF_RATING, y = TWITTER_RETWEET_COUNT)) +
-  geom_smooth(data = def, aes(x = DEF_RATING, y = TWITTER_RETWEET_COUNT), fill = "red",
-              colour = "red") +
-  labs(title = "Ratings VS Twitter Retweet Count") +
-  ylab("Twitter Retweet Count") + xlab("Rating")
+for(i in 1:nrow(dataset)) {
+  if(dataset$OFFRTG[i] > dataset$DEFRTG[i]) {
+    dataset$OFF_OR_DEF[i] <- "OFF"
+  } else {
+    dataset$OFF_OR_DEF[i] <- "DEF"
+  }
+}
 
-#make a graph about ratings and twitter favorite counts
-graph_favorite <- ggplot() +
-  geom_point(data = off, aes(x = OFF_RATING, y = TWITTER_FAVORITE_COUNT)) +
-  geom_smooth(data = off, aes(x = OFF_RATING, y = TWITTER_FAVORITE_COUNT), fill = "blue",
-              colour = "darkblue") +
-  geom_point(data = def, aes(x = DEF_RATING, y = TWITTER_FAVORITE_COUNT)) +
-  geom_smooth(data = def, aes(x = DEF_RATING, y = TWITTER_FAVORITE_COUNT), fill = "red",
-              colour = "red") +
-  labs(title = "Ratings VS Twitter Favorite Count") +
-  ylab("Twitter Favorite Count") + xlab("Rating")
+dataset <- dataset %>% 
+           group_by(OFF_OR_DEF) %>%
+           summarize(MED_TWITTER_RETWEETS = median(TWITTER_RETWEET_COUNT), MED_TWITTER_FAVORITES = median(TWITTER_FAVORITE_COUNT))
+
+op <- options(gvis.plot.tag='chart')
+
+graphic2 <- gvisColumnChart(dataset, 
+                            options=list(height="800px",
+                                         title="Twitter Engagement of Offensive and Defensive Players (2017)"))
+
+createGraphic2 <- function() {plot(graphic2)}
