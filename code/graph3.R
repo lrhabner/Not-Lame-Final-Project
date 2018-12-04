@@ -15,13 +15,15 @@ data <- unprocessedData %>%
   summarize(AGE = mean(AGE), SALARY_MILLIONS = mean(SALARY_MILLIONS)) %>%
   arrange(TWITTER_FOLLOWER_COUNT_MILLIONS)
 
-graph3 <- ggplot(data=data, aes(x=TWITTER_FOLLOWER_COUNT_MILLIONS)) +
-  ggtitle('Twitter Followers vs. Age and Salary') +
-  geom_point(aes(y=AGE-20), col='red', size=0.5) +
-  geom_point(aes(y=SALARY_MILLIONS), col='green', size=0.5) +
-  scale_y_continuous(sec.axis = sec_axis(~.+20, name = "Age (Years)")) +
-  xlab('Twitter Followers (Millions)') +
-  ylab('Salary (Millions of Dollars)')
+createGraphic3 <- function() {
+  ggplot(data=data, aes(x=TWITTER_FOLLOWER_COUNT_MILLIONS)) +
+    ggtitle('Twitter Followers vs. Age and Salary') +
+    geom_point(aes(y=AGE-20), col='red', size=0.5) +
+    geom_point(aes(y=SALARY_MILLIONS), col='green', size=0.5) +
+    scale_y_continuous(sec.axis = sec_axis(~.+20, name = "Age (Years)")) +
+    xlab('Twitter Followers (Millions)') +
+    ylab('Salary (Millions of Dollars)')
+}
 
 
 
