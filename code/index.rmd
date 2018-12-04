@@ -1,0 +1,35 @@
+---
+title: "Not Lame Final Project"
+output: 
+  html_document:
+    self_contained: no
+---
+
+``` {r include = FALSE}
+library("knitr")
+source("dataProcessing.R")
+source("graphic1.R")
+source("graphic2.R")
+source("graphic3.R")
+
+```
+
+### Twitter and the NBA
+
+
+``` {r results = 'asis'}
+createGraphic1()
+```
+
+``` {r}
+createGraphic2()
+```
+
+``` {r}
+createGraphic3()
+```
+
+``` {r}
+
+```
+
