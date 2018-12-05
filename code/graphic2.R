@@ -7,18 +7,19 @@ library(googleVis)
 dataset <- data_player %>% 
            select(PLAYER, OFFRTG, DEFRTG, TWITTER_FAVORITE_COUNT, TWITTER_RETWEET_COUNT) %>%
            filter(!is.na(TWITTER_FAVORITE_COUNT) & !is.na(TWITTER_RETWEET_COUNT))
+colnames(dataset) <- c('Player', 'Offensive Rating', 'Defensive Rating', 'Favorite Count', 'Retweet Count')
 
 for(i in 1:nrow(dataset)) {
-  if(dataset$OFFRTG[i] > dataset$DEFRTG[i]) {
-    dataset$OFF_OR_DEF[i] <- "OFF"
+  if(dataset$`Offensive Rating`[i] > dataset$`Defensive Rating`[i]) {
+    dataset$OFF_OR_DEF[i] <- "Offensive Players"
   } else {
-    dataset$OFF_OR_DEF[i] <- "DEF"
+    dataset$OFF_OR_DEF[i] <- "Defensive Players"
   }
 }
 
 dataset <- dataset %>% 
            group_by(OFF_OR_DEF) %>%
-           summarize(MED_TWITTER_RETWEETS = median(TWITTER_RETWEET_COUNT), MED_TWITTER_FAVORITES = median(TWITTER_FAVORITE_COUNT))
+           summarize(`Median Retweet Count` = median(`Retweet Count`), `Median Favorite Count` = median(`Favorite Count`))
 
 op <- options(gvis.plot.tag='chart')
 

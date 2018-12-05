@@ -5,16 +5,14 @@ output:
     toc: true
     toc_depth: 2
     toc_float: true
-    theme: cosmo
 ---
 
 ``` {r include = FALSE}
 library("knitr")
 source("dataProcessing.R")
-source("processData1.R")
 source("graphic1.R")
 source("graphic2.R")
-source("graph3.R")
+source("graphic3.R")
 
 ```
 
@@ -25,65 +23,33 @@ source("graph3.R")
 
 ***
 
-## **Summary**
+## Summary
 
 Our [repository](https://github.com/lrhabner/Not-Lame-Final-Project) can be accessed on GitHub. 
 
 Our group worked with a dataset entitled [Social Power NBA](https://www.kaggle.com/noahgift/social-power-nba), which we accessed through Kaggle. It is a collection of static .csv files, each of which has information pertaining to teams' audience turnout, players' game statistics, players' off-court characteristics, or players' Twitter statistics. The data was gathered by Noah Gift, who sourced it from ESPN, Basketball-Reference, Twitter, Five-ThirtyEight, and Wikipedia.  
 
-While analyzing this dataset, we considered NBA players to be our target audience. We intended to provide them with insight about the effects of their social media engagement on their basketball games. In addition, we aimed to describe correlations between their statistics, characteristics, and social media engagement. Ultimately, we hope that our discoveries will be impactful to the industry, especially in supporting the "More Than an Athlete" movement.
+While analyzing this dataset, we considered NBA players, managers, and owners to be our target audience. We intended to provide them with insight about the effects of the players' social media engagement on their basketball games. In addition, we aimed to describe correlations between players' statistics, characteristics, and social media engagement. Ultimately, we hope that our discoveries will be impactful to the industry, especially in supporting the "More Than an Athlete" movement.
 
 ***
 
-## **The Team**
+## The Team
 
 ### Dawn Thompson
 Dawn is a sophomore at the University of Washington intending to major in Informatics and Geography. She has been playing basketball for 12 years and is an active member in the UW intramural leagues. Her favorite NBA team is the Washington Wizards and her favorite player is Kelly Oubre Jr.  
 
 ### Jeffrey Wang
-
-### Logan Habner
+Jeff is a sophomore at the University of Washington who is interested in CS and UX design. He has been playing basketball recreatively for 10 years. He is from the bay area where basketball has been booming because of the Golden State Warriors' recent success. However, his favorite player to watch is Kyrie Irving because he got that sauce.
 
 ### Mark Wu
+Mark is a sophomore at the University of Washington who intends to major in ACMS and Informatics. He has been playing basketball for 10 years. His favorite player is Lebron James and supports any team he is on. There is no reason needed to support the GOAT.
+
+### Logan Habner
+Logan is a junior at the University of Washington with a major in Electrical Engineering. He's interested in automation and artifical intelligence. He went to a basketball game once ten years ago. His next closest experience is playing the Hoops game mode in Rocket League.
 
 ***
 
-## **Question 1**
-
-### Can the level of engagement with players' Twitter accounts and/or the structure of the team predict their audience turnout?
-
-``` {r results = 'asis', echo = FALSE}
-createGraphic1()
-```
-
-#### **Interacting With the Graph**
-
-Users can view specific statistics by hovering the cursor over the bubble.  
-Users can zoom in by clicking and dragging to select an area of interest.  
-Users can reset the view by right-clicking.
-
-</br>
-
-#### **About the Graph**
-
-The data comes from individual players' social statistics but is grouped by team.  
-The size of the bubble is based on the average audience attendance.  
-The hue of the bubble is based on the number of players on the team.
-
-</br>
-
-#### **Observations**
-
-Teams with less favorites than retweets saw lower audience attendance.  
-Teams with over 20 favorites saw higher audience attendance.  
-Teams with over 15 retweets sawhigher audience attendance.  
-Teams with 14 to 16 players had the highest audience attendance.  
-Teams with 16 to 19 players had the average audience attendance.  
-Teams with 12 to 14 players had the lowest audience attendance.
-
-***
-
-## **Question 2**
+## Question 1 
 
 ### Do players who perform better on offense or defense experience more engagement with their Twitter accounts?
 
@@ -92,11 +58,51 @@ Teams with 12 to 14 players had the lowest audience attendance.
 createGraphic2()
 ```
 
-##### Players with a better offensive rating than defensive rating had greater numbers of both retweets and favorites on Twitter. This suggests that fans are more engaged on social media with players who perform better on offense.
+#### **About the Graph**
+
+The data related to social media comes from individual players' social statistics.   
+The data related to players' performances comes from players' seasonal statistics.  
+Users can view specific statistics by hovering the cursor over the bar.  
+
+#### **Observations**
+
+Players with a better **offensive rating** than defensive rating had greater numbers of 
+both **retweets** and **favorites** on Twitter.  
+This suggests that fans are more engaged on social media with players who **perform better on offense**.  
 
 ***
 
-## **Question 3**
+## Question 2
+
+### Can the level of engagement with players' Twitter accounts and/or the structure of the team predict their audience turnout?
+
+``` {r results = 'asis', echo = FALSE}
+createGraphic1()
+```
+
+#### About the Graph
+
+The data comes from individual players' social statistics but is grouped by team.  
+The **size** of the bubble is based on the **average audience attendance**.  
+The **hue** of the bubble is based on the **number of players** on the team.  
+Users can view specific statistics by hovering the cursor over the bubble.
+Users can zoom in by clicking and dragging to select an area of interest.
+Users can reset the view by right-clicking.
+
+
+
+#### Observations
+
+Teams with **less favorites than retweets** saw **lower audience attendance**.  
+Teams with **over 20 favorites** saw **higher audience attendance**.  
+Teams with **over 15 retweets** saw **higher audience attendance**.  
+Teams with **14 to 16 players** had the **highest audience attendance**.  
+Teams with **16 to 19 players** had the **average audience attendance**.  
+Teams with **12 to 14 players** had the **lowest audience attendance**.
+
+***
+
+## Question 3
 
 ### Does a player's number of Twitter followers show a stronger correlation with their age or salary?
 
@@ -104,5 +110,28 @@ createGraphic2()
 ``` {r results = 'asis', echo = FALSE}
 createGraphic3()
 ```
+
+#### About the Graph
+
+The age data comes from players' birthdays.  
+The salary data comes from players' contracts.  
+The twitter data comes from players' social statistics.  
+The **size** and **hue** of the bubble is based on a player's salary in millions of dollars.  
+Users can view specific statistics by hovering the cursor over the bubble.  
+Users can zoom in by clicking and dragging to select an area of interest.  
+Users can reset the view by right-clicking.  
+
+</br>
+
+#### Observations
+
+Players with **higher salaries** have a **larger twitter following** in general.  
+Players who are **relatively young** and **relatively old** have a **smaller twitter following** in general.  
+
+Outliers include:  
+  **Stephen Curry** who took a pay cut to help his team (less pay than expected)  
+  **Pau Gasol** who is popular in Spain (more followers than expected)  
+  **Dirk Nowitzki** who was a respected veteran star (higher pay than expected)  
+
 
 </center>
