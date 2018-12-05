@@ -2,6 +2,9 @@
 output: 
   html_document:
     self_contained: no
+    toc: true
+    toc_depth: 2
+    toc_float: true
 ---
 
 ``` {r include = FALSE}
@@ -16,25 +19,64 @@ source("graph3.R")
 <center>
 
 # **Twitter and the NBA**
-## Not Lame Final INFO 201 Project
+### Not Lame INFO 201 Final Project
 
 ***
 
-</br>
+## Summary
 
-### Can the level of engagement with players' Twitter accounts predict their team's audience turnout?
+Our [repository](https://github.com/lrhabner/Not-Lame-Final-Project) can be accessed on GitHub. 
+
+Our group worked with a dataset entitled [Social Power NBA](https://www.kaggle.com/noahgift/social-power-nba), which we accessed through Kaggle. It is a collection of static .csv files, each of which has information pertaining to teams' audience turnout, players' game statistics, players' off-court characteristics, or players' Twitter statistics. The data was gathered by Noah Gift, who sourced it from ESPN, Basketball-Reference, Twitter, Five-ThirtyEight, and Wikipedia.  
+
+While analyzing this dataset, we considered NBA players to be our target audience. We intended to provide them with insight about the effects of their social media engagement on their basketball games. In addition, we aimed to describe correlations between their statistics, characteristics, and social media engagement. Ultimately, we hope that our discoveries will be impactful to the industry, especially in supporting the "More Than an Athlete" movement.
+
+***
+
+## The Team
+
+### Dawn Thompson
+Dawn is a sophomore at the University of Washington intending to major in Informatics and Geography. She has been playing basketball for 12 years and is an active member in the UW intramural leagues. Her favorite NBA team is the Washington Wizards and her favorite player is Kelly Oubre Jr.  
+
+### Jeffrey Wang
+
+### Logan Habner
+
+### Mark Wu
+
+***
+
+## Question 1
+
+### Can the level of engagement with players' Twitter accounts and/or the structure of the team predict their audience turnout?
 
 ``` {r results = 'asis', echo = FALSE}
 createGraphic1()
 ```
 
-##### The team with the highest average audience turnout was the `r highest_audience$Team` while the team with the lowest average audience turnout was the `r lowest_audience$Team`. The `r highest_retweets$Team` had the highest median number of retweets on Twitter while the `r lowest_retweets$Team` had the lowest median number of retweets on Twitter. However, the `r highest_favorites$Team` had the highest median number of favorites on Twitter while the `r lowest_favorites$Team` had the lowest median number of favorites on Twitter.
+#### About the Graph
+
+The data comes from individual players' social statistics but is grouped by team.  
+The **size** of the bubble is based on the **average audience attendance**.  
+The **hue** of the bubble is based on the **number of players** on the team.  
+Users can view specific statistics by hovering the cursor over the bubble.
+Users can zoom in by clicking and dragging to select an area of interest.
+Users can reset the view by right-clicking.
 
 </br>
+
+#### Observations
+
+Teams with **less favorites than retweets** saw **lower audience attendance**.  
+Teams with **over 20 favorites** saw **higher audience attendance**.  
+Teams with **over 15 retweets** saw **higher audience attendance**.  
+Teams with **14 to 16 players** had the **highest audience attendance**.  
+Teams with **16 to 19 players** had the **average audience attendance**.  
+Teams with **12 to 14 players** had the **lowest audience attendance**.
 
 ***
 
-</br>
+## Question 2 
 
 ### Do players who perform better on offense or defense experience more engagement with their Twitter accounts?
 
@@ -45,11 +87,9 @@ createGraphic2()
 
 ##### Players with a better offensive rating than defensive rating had greater numbers of both retweets and favorites on Twitter. This suggests that fans are more engaged on social media with players who perform better on offense.
 
-</br>
-
 ***
 
-</br>
+## Question 3
 
 ### Does a player's number of Twitter followers show a stronger correlation with their age or salary?
 
