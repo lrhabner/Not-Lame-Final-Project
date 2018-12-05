@@ -63,8 +63,6 @@ createGraphic2()
 The data related to _social media_ comes from individual players' _social statistics_.  
 The data related to _players' performances_ comes from players' _seasonal statistics_.
 
-</br>
-
 #### **Observations**
 
 Players with a better **offensive rating** than defensive rating had greater numbers of 
@@ -90,7 +88,7 @@ Users can view specific statistics by hovering the cursor over the bubble.
 Users can zoom in by clicking and dragging to select an area of interest.
 Users can reset the view by right-clicking.
 
-</br>
+
 
 #### Observations
 
@@ -126,8 +124,10 @@ Users can reset the view by right-clicking.
 
 #### Observations
 
-Players with **higher salaries** have a **larger twitter following** in general.
+Players with **higher salaries** have a **larger twitter following** in general. 
+
 Players who are **relatively young** and **relatively old** have a **smaller twitter following** in general.
+
 Outliers include:
   **Stephen Curry** who took a pay cut to help his team (less pay than expected)
   **Pau Gasol** who is popular in Spain (more followers than expected)
