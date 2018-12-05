@@ -11,6 +11,7 @@ output:
 ``` {r include = FALSE}
 library("knitr")
 source("dataProcessing.R")
+source("processData1.R")
 source("graphic1.R")
 source("graphic2.R")
 source("graph3.R")
