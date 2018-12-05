@@ -60,8 +60,9 @@ createGraphic2()
 
 #### **About the Graph**
 
-The data related to _social media_ comes from individual players' _social statistics_.  
-The data related to _players' performances_ comes from players' _seasonal statistics_.
+The data related to social media comes from individual players' social statistics.  
+The data related to players' performances comes from players' seasonal statistics.
+Users can view specific statistics by hovering the cursor over the bar.
 
 #### **Observations**
 
@@ -131,7 +132,7 @@ Players who are **relatively young** and **relatively old** have a **smaller twi
 Outliers include:
   **Stephen Curry** who took a pay cut to help his team (less pay than expected)
   **Pau Gasol** who is popular in Spain (more followers than expected)
-  **Dirk Nowitzki** who is a veteran star (higher pay than expected)
+  **Dirk Nowitzki** who was a respected veteran star (higher pay than expected)
 
 
 </center>
