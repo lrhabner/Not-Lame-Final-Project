@@ -13,7 +13,7 @@ op <- options(gvis.plot.tag='chart')
 graphic3 <- gvisBubbleChart(data, idvar = "Name", 
                           xvar = "Twitter Follower Count in Millions", yvar = "Age",
                           colorvar = "Salary in Millions", sizevar = "Salary in Millions",
-                          options=list(height="800px", width="1000px",
+                          options=list(height="800px",
                                        explorer="{actions:['dragToZoom', 'rightClickToReset']}",
                                        explorer="{maxZoomIn:.1}",
                                        series="[{targetAxisIndex: 0}]",
