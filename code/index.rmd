@@ -20,7 +20,7 @@ source("graphic3.R")
 
 <center>
 
-# **Twitter and the NBA**
+# **Twitter and the NBA**  
 ### Not Lame INFO 201 Final Project
 
 ![](nba_twitter.jpg)
@@ -39,7 +39,7 @@ While analyzing this dataset, we considered NBA players, managers, and owners to
 
 ## **The Team**
 
-### Dawn Thompson
+### Dawn Thompson 
 Dawn is a sophomore at the University of Washington intending to major in Informatics and Geography. She has been playing basketball for 12 years and is an active member in the UW intramural leagues. Despite their absolutely tragic start to the season, her favorite NBA team is the Washington Wizards and her favorite player is Kelly Oubre Jr (what can I say, he's easy to watch).  
 
 ### Jeffrey Wang
@@ -119,7 +119,7 @@ createGraphic3()
 
 Users can view specific statistics by hovering the cursor over the bubble.  
 Users can zoom in by clicking and dragging to select an area of interest.  
-Users can reset the view by right-clicking. 
+Users can reset the view by right-clicking.  
 The size and hue of the bubble is based on a player's salary in millions of dollars.  
 
 </br>
@@ -130,10 +130,9 @@ There is a stronger correlation between a player's number of Twitter followers a
 Players with higher salaries have a larger Twitter following overall.  
 Players who are relatively young or relatively old have a smaller Twitter following overall.  
 
-Some notable outliers are... 
-  Stephen Curry, who took a pay cut to help his team (lower pay than expected)  
+Some notable outliers are...  
+  Stephen Curry, who took a pay cut to help his team (more followers than expected)  
   Pau Gasol, who is popular in Spain (more followers than expected)  
-  Dirk Nowitzki, who was a respected veteran star (higher pay than expected)  
 
 ***
 
