@@ -25,7 +25,7 @@ source("graph3.R")
 
 ***
 
-## Summary
+## **Summary**
 
 Our [repository](https://github.com/lrhabner/Not-Lame-Final-Project) can be accessed on GitHub. 
 
@@ -35,7 +35,7 @@ While analyzing this dataset, we considered NBA players to be our target audienc
 
 ***
 
-## The Team
+## **The Team**
 
 ### Dawn Thompson
 Dawn is a sophomore at the University of Washington intending to major in Informatics and Geography. She has been playing basketball for 12 years and is an active member in the UW intramural leagues. Her favorite NBA team is the Washington Wizards and her favorite player is Kelly Oubre Jr.  
@@ -48,7 +48,7 @@ Dawn is a sophomore at the University of Washington intending to major in Inform
 
 ***
 
-## Question 1
+## **Question 1**
 
 ### Can the level of engagement with players' Twitter accounts and/or the structure of the team predict their audience turnout?
 
@@ -56,29 +56,34 @@ Dawn is a sophomore at the University of Washington intending to major in Inform
 createGraphic1()
 ```
 
-#### About the Graph
+#### **Interacting With the Graph**
 
-The data comes from individual players' social statistics but is grouped by team.  
-The **size** of the bubble is based on the **average audience attendance**.  
-The **hue** of the bubble is based on the **number of players** on the team.  
 Users can view specific statistics by hovering the cursor over the bubble.  
 Users can zoom in by clicking and dragging to select an area of interest.  
 Users can reset the view by right-clicking.
 
 </br>
 
-#### Observations
+#### **About the Graph**
 
-Teams with **less favorites than retweets** saw **lower audience attendance**.  
-Teams with **over 20 favorites** saw **higher audience attendance**.  
-Teams with **over 15 retweets** saw **higher audience attendance**.  
-Teams with **14 to 16 players** had the **highest audience attendance**.  
-Teams with **16 to 19 players** had the **average audience attendance**.  
-Teams with **12 to 14 players** had the **lowest audience attendance**.
+The data comes from individual players' social statistics but is grouped by team.  
+The size of the bubble is based on the average audience attendance.  
+The hue of the bubble is based on the number of players on the team.
+
+</br>
+
+#### **Observations**
+
+Teams with less favorites than retweets saw lower audience attendance.  
+Teams with over 20 favorites saw higher audience attendance.  
+Teams with over 15 retweets sawhigher audience attendance.  
+Teams with 14 to 16 players had the highest audience attendance.  
+Teams with 16 to 19 players had the average audience attendance.  
+Teams with 12 to 14 players had the lowest audience attendance.
 
 ***
 
-## Question 2 
+## **Question 2**
 
 ### Do players who perform better on offense or defense experience more engagement with their Twitter accounts?
 
@@ -91,7 +96,7 @@ createGraphic2()
 
 ***
 
-## Question 3
+## **Question 3**
 
 ### Does a player's number of Twitter followers show a stronger correlation with their age or salary?
 
