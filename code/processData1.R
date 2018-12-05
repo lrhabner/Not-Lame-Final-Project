@@ -62,4 +62,4 @@ rm(team_data)
 rm(team_med_twitter_stats)
 
 # write processed data to csv file
-write.csv(dataset, "../data/dataset1.csv")
+write.csv(dataset, "../data/dataset.csv")
