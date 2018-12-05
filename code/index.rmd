@@ -89,16 +89,16 @@ createGraphic2()
 
 #### **About the Graph**
 
-The data related to social media comes from individual players' social statistics.  
-The data related to players' performances comes from players' seasonal statistics.
+The data related to _social media_ comes from individual players' _social statistics_.  
+The data related to _players' performances_ comes from players' _seasonal statistics_.
 
 </br>
 
 #### **Observations**
 
-Players with a better offensive rating than defensive rating had greater numbers of 
-both retweets and favorites on Twitter. 
-This suggests that fans are more engaged on social media with players who perform better on offense.
+Players with a better **offensive rating** than defensive rating had greater numbers of 
+both **retweets** and **favorites** on Twitter. 
+This suggests that fans are more engaged on social media with players who **perform better on offense**.
 
 ***
 
