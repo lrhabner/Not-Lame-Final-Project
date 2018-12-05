@@ -23,7 +23,7 @@ source("graphic3.R")
 # **Twitter and the NBA**
 ### Not Lame INFO 201 Final Project
 
-![](../nba_twitter.jpg)
+![](nba_twitter.jpg)
 
 ***
 
