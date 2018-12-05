@@ -4,11 +4,11 @@ library(googleVis)
 unprocessedData <- data.table::fread('../data/nba_2016_2017_100.csv')
 
 data <- unprocessedData %>%
-  select(AGE, SALARY_MILLIONS, TWITTER_FOLLOWER_COUNT_MILLIONS) %>%
-  filter(TWITTER_FOLLOWER_COUNT_MILLIONS > 0) %>%
-  group_by(TWITTER_FOLLOWER_COUNT_MILLIONS) %>%
-  summarize(AGE = mean(AGE), SALARY_MILLIONS = mean(SALARY_MILLIONS)) %>%
-  arrange(TWITTER_FOLLOWER_COUNT_MILLIONS)
+        select(AGE, SALARY_MILLIONS, TWITTER_FOLLOWER_COUNT_MILLIONS) %>%
+        filter(TWITTER_FOLLOWER_COUNT_MILLIONS > 0) %>%
+        group_by(TWITTER_FOLLOWER_COUNT_MILLIONS) %>%
+        summarize(AGE = mean(AGE), SALARY_MILLIONS = mean(SALARY_MILLIONS)) %>%
+        arrange(TWITTER_FOLLOWER_COUNT_MILLIONS)
 
 op <- options(gvis.plot.tag='chart')
 
