@@ -4,7 +4,7 @@
 library(dplyr)
 library(googleVis)
 
-dataset <- read.csv("../data/dataset1.csv", stringsAsFactors = FALSE)
+dataset <- read.csv("../data/dataset.csv", stringsAsFactors = FALSE)
 
 highest_audience <- filter(dataset, AVG_AUDIENCE == max(AVG_AUDIENCE))
 lowest_audience <- filter(dataset, AVG_AUDIENCE == min(AVG_AUDIENCE))
