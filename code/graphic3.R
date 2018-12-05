@@ -18,7 +18,7 @@ graphic3 <- gvisBubbleChart(data, idvar = "Name",
                                        explorer="{maxZoomIn:.1}",
                                        series="[{targetAxisIndex: 0}]",
                                        vAxes="[{title:'Age'}]",
-                                       hAxis='{title:"Twitter Followers"}',
+                                       hAxis='{title:"Twitter Followers (Millions)"}',
                                        bubble="{textStyle:{color: 'none'}}",
                                        title="Correlation Between Twitter Followers, Age, and Salary (2017)"))
 
