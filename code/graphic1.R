@@ -4,7 +4,7 @@
 library(dplyr)
 library(googleVis)
 
-dataset <- read.csv("../data/dataset.csv", stringsAsFactors = FALSE)
+dataset <- read.csv("../data/dataset1.csv", stringsAsFactors = FALSE)
 
 # change the behavior of plot.gvis so that only the chart component of the HTML file is written into the output file
 op <- options(gvis.plot.tag='chart')
