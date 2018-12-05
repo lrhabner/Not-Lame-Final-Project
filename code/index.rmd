@@ -14,7 +14,7 @@ source("dataProcessing.R")
 source("processData1.R")
 source("graphic1.R")
 source("graphic2.R")
-source("graph3.R")
+source("graphic3.R")
 
 ```
 
