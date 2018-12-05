@@ -25,5 +25,6 @@ graphic1 <- gvisBubbleChart(dataset, idvar="Team",
                                          hAxis='{title:"Median Twitter Retweets"}',
                                          vAxis='{title:"Median Twitter Favorites"}',
                                          bubble="{textStyle:{color: 'none'}}",
+                                         colorAxis="{colors: ['#ffe6b7', '#ffa500']}",
                                          title="Correlation Between Number of Players, Median Twitter Retweets, Median Twitter Favorites, and Average Audience Turnout (2017)"))
 createGraphic1 <- function() {plot(graphic1)}
