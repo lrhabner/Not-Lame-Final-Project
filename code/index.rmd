@@ -12,7 +12,7 @@ library("knitr")
 source("dataProcessing.R")
 source("graphic1.R")
 source("graphic2.R")
-source("graph3.R")
+source("graphic3.R")
 
 ```
 
@@ -39,6 +39,7 @@ While analyzing this dataset, we considered NBA players to be our target audienc
 Dawn is a sophomore at the University of Washington intending to major in Informatics and Geography. She has been playing basketball for 12 years and is an active member in the UW intramural leagues. Her favorite NBA team is the Washington Wizards and her favorite player is Kelly Oubre Jr.  
 
 ### Jeffrey Wang
+Jeff is a sophomore at the University of Washington who is interested in CS and UX design. He has been playing basketball recreatively for 9 years. He is from the bay area where basketball has been booming because of the Golden State Warriors' recent success. However, his favorite player to watch is Kyrie Irving because he got that sauce.
 
 ### Logan Habner
 
