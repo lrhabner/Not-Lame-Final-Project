@@ -5,6 +5,7 @@ output:
     toc: true
     toc_depth: 2
     toc_float: true
+    theme: cosmo
 ---
 
 ``` {r include = FALSE}
@@ -59,8 +60,8 @@ createGraphic1()
 The data comes from individual players' social statistics but is grouped by team.  
 The **size** of the bubble is based on the **average audience attendance**.  
 The **hue** of the bubble is based on the **number of players** on the team.  
-Users can view specific statistics by hovering the cursor over the bubble.
-Users can zoom in by clicking and dragging to select an area of interest.
+Users can view specific statistics by hovering the cursor over the bubble.  
+Users can zoom in by clicking and dragging to select an area of interest.  
 Users can reset the view by right-clicking.
 
 </br>
