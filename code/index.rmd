@@ -41,9 +41,11 @@ Dawn is a sophomore at the University of Washington intending to major in Inform
 ### Jeffrey Wang
 Jeff is a sophomore at the University of Washington who is interested in CS and UX design. He has been playing basketball recreatively for 9 years. He is from the bay area where basketball has been booming because of the Golden State Warriors' recent success. However, his favorite player to watch is Kyrie Irving because he got that sauce.
 
-### Logan Habner
-
 ### Mark Wu
+Mark is a sophomore at the University of Washington who intends to major in ACMS and Informatics. He has been playing basketball for 10 years. His favorite player is Lebron James and supports any team he is on. There is no reason needed to support the GOAT.
+
+### Logan Habner
+Logan is a junior at the University of Washington in the Electrical Engineering Major. He went to a basketball game once ten years ago. His next closest experience is playing the Hoops game mode in Rocket League.
 
 ***
 
@@ -86,7 +88,18 @@ Teams with **12 to 14 players** had the **lowest audience attendance**.
 createGraphic2()
 ```
 
-##### Players with a better offensive rating than defensive rating had greater numbers of both retweets and favorites on Twitter. This suggests that fans are more engaged on social media with players who perform better on offense.
+#### **About the Graph**
+
+The data related to social media comes from individual players' social statistics.  
+The data related to players' performances comes from players' seasonal statistics.
+
+</br>
+
+#### **Observations**
+
+Players with a better offensive rating than defensive rating had greater numbers of 
+both retweets and favorites on Twitter. 
+This suggests that fans are more engaged on social media with players who perform better on offense.
 
 ***
 
