@@ -15,7 +15,7 @@
 
 <script src="index_files/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="index_files/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<link href="index_files/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="index_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="index_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="index_files/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -227,24 +227,28 @@ div.tocify {
 <h1><strong>Twitter and the NBA</strong></h1>
 <div id="not-lame-info-201-final-project" class="section level3">
 <h3>Not Lame INFO 201 Final Project</h3>
+<div class="figure">
+<img src="../nba_twitter.jpg" />
+
+</div>
 <hr />
 </div>
 <div id="summary" class="section level2">
-<h2>Summary</h2>
+<h2><strong>Summary</strong></h2>
 <p>Our <a href="https://github.com/lrhabner/Not-Lame-Final-Project">repository</a> can be accessed on GitHub.</p>
 <p>Our group worked with a dataset entitled <a href="https://www.kaggle.com/noahgift/social-power-nba">Social Power NBA</a>, which we accessed through Kaggle. It is a collection of static .csv files, each of which has information pertaining to teams’ audience turnout, players’ game statistics, players’ off-court characteristics, or players’ Twitter statistics. The data was gathered by Noah Gift, who sourced it from ESPN, Basketball-Reference, Twitter, Five-ThirtyEight, and Wikipedia.</p>
 <p>While analyzing this dataset, we considered NBA players, managers, and owners to be our target audience. We intended to provide them with insight about the effects of the players’ social media engagement on their basketball games. In addition, we aimed to describe correlations between players’ statistics, characteristics, and social media engagement. Ultimately, we hope that our discoveries will be impactful to the industry, especially in supporting the “More Than an Athlete” movement.</p>
 <hr />
 </div>
 <div id="the-team" class="section level2">
-<h2>The Team</h2>
+<h2><strong>The Team</strong></h2>
 <div id="dawn-thompson" class="section level3">
 <h3>Dawn Thompson</h3>
-<p>Dawn is a sophomore at the University of Washington intending to major in Informatics and Geography. She has been playing basketball for 12 years and is an active member in the UW intramural leagues. Her favorite NBA team is the Washington Wizards and her favorite player is Kelly Oubre Jr.</p>
+<p>Dawn is a sophomore at the University of Washington intending to major in Informatics and Geography. She has been playing basketball for 12 years and is an active member in the UW intramural leagues. Despite their absolutely tragic start to the season, her favorite NBA team is the Washington Wizards and her favorite player is Kelly Oubre Jr (what can I say, he’s easy to watch).</p>
 </div>
 <div id="jeffrey-wang" class="section level3">
 <h3>Jeffrey Wang</h3>
-<p>Jeff is a sophomore at the University of Washington who is interested in CS and UX design. He has been playing basketball recreatively for 10 years. He is from the bay area where basketball has been booming because of the Golden State Warriors’ recent success. However, his favorite player to watch is Kyrie Irving because he got that sauce.</p>
+<p>Jeff is a sophomore at the University of Washington who is interested in CS and UX design. He has been playing basketball recreatively for 10 years. He is from the Bay Area where basketball has been booming because of the Golden State Warriors’ recent success. However, his favorite player to watch is Kyrie Irving because he got that sauce.</p>
 </div>
 <div id="mark-wu" class="section level3">
 <h3>Mark Wu</h3>
@@ -257,16 +261,16 @@ div.tocify {
 </div>
 </div>
 <div id="question-1" class="section level2">
-<h2>Question 1</h2>
+<h2><strong>Question 1</strong></h2>
 <div id="do-players-who-perform-better-on-offense-or-defense-experience-more-engagement-with-their-twitter-accounts" class="section level3">
 <h3>Do players who perform better on offense or defense experience more engagement with their Twitter accounts?</h3>
 <!-- ColumnChart generated in R 3.5.1 by googleVis 0.6.3 package -->
-<!-- Wed Dec 05 02:16:40 2018 -->
+<!-- Wed Dec 05 10:38:26 2018 -->
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataColumnChartID1b442b26434 () {
+function gvisDataColumnChartID24742636440d () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -289,15 +293,15 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartColumnChartID1b442b26434() {
-var data = gvisDataColumnChartID1b442b26434();
+function drawChartColumnChartID24742636440d() {
+var data = gvisDataColumnChartID24742636440d();
 var options = {};
 options["allowHtml"] = true;
 options["height"] = "800px";
 options["title"] = "Twitter Engagement of Offensive and Defensive Players (2017)";
 
     var chart = new google.visualization.ColumnChart(
-    document.getElementById('ColumnChartID1b442b26434')
+    document.getElementById('ColumnChartID24742636440d')
     );
     chart.draw(data,options);
     
@@ -321,9 +325,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartColumnChartID1b442b26434);
+callbacks.push(drawChartColumnChartID24742636440d);
 })();
-function displayChartColumnChartID1b442b26434() {
+function displayChartColumnChartID24742636440d() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -346,36 +350,36 @@ callbacks.shift()();
 // jsFooter
 </script>
 <!-- jsChart -->
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartColumnChartID1b442b26434"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartColumnChartID24742636440d"></script>
 <!-- divChart -->
-<div id="ColumnChartID1b442b26434" style="width: 500; height: 800px;">
+<div id="ColumnChartID24742636440d" style="width: 500; height: 800px;">
 
 </div>
 <div id="about-the-graph" class="section level4">
 <h4><strong>About the Graph</strong></h4>
-<p>The data related to social media comes from individual players’ social statistics.<br />
-The data related to players’ performances comes from players’ seasonal statistics.<br />
-Users can view specific statistics by hovering the cursor over the bar.</p>
+<p>Users can view specific statistics by hovering the cursor over the bar.<br />
+The data related to social media comes from individual players’ social statistics.<br />
+The data related to players’ performances comes from players’ seasonal statistics.</p>
+<p></br></p>
 </div>
 <div id="observations" class="section level4">
 <h4><strong>Observations</strong></h4>
-<p>Players with a better <strong>offensive rating</strong> than defensive rating had greater numbers of both <strong>retweets</strong> and <strong>favorites</strong> on Twitter.<br />
-This suggests that fans are more engaged on social media with players who <strong>perform better on offense</strong>.</p>
+<p>Players with a better offensive rating than defensive rating had greater numbers of both retweets and favorites on Twitter.</p>
 <hr />
 </div>
 </div>
 </div>
 <div id="question-2" class="section level2">
-<h2>Question 2</h2>
+<h2><strong>Question 2</strong></h2>
 <div id="can-the-level-of-engagement-with-players-twitter-accounts-andor-the-structure-of-the-team-predict-their-audience-turnout" class="section level3">
 <h3>Can the level of engagement with players’ Twitter accounts and/or the structure of the team predict their audience turnout?</h3>
 <!-- BubbleChart generated in R 3.5.1 by googleVis 0.6.3 package -->
-<!-- Wed Dec 05 02:16:40 2018 -->
+<!-- Wed Dec 05 10:38:26 2018 -->
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataBubbleChartID1b4464d87f80 () {
+function gvisDataBubbleChartID247417007381 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -600,8 +604,8 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartBubbleChartID1b4464d87f80() {
-var data = gvisDataBubbleChartID1b4464d87f80();
+function drawChartBubbleChartID247417007381() {
+var data = gvisDataBubbleChartID247417007381();
 var options = {};
 options["height"] = "800px";
 options["explorer"] = {actions:['dragToZoom', 'rightClickToReset']};
@@ -613,7 +617,7 @@ options["colorAxis"] = {colors: ['#ffe6b7', '#ffa500']};
 options["title"] = "Correlation Between Number of Players, Median Twitter Retweets, Median Twitter Favorites, and Average Audience Turnout (2017)";
 
     var chart = new google.visualization.BubbleChart(
-    document.getElementById('BubbleChartID1b4464d87f80')
+    document.getElementById('BubbleChartID247417007381')
     );
     chart.draw(data,options);
     
@@ -637,9 +641,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartBubbleChartID1b4464d87f80);
+callbacks.push(drawChartBubbleChartID247417007381);
 })();
-function displayChartBubbleChartID1b4464d87f80() {
+function displayChartBubbleChartID247417007381() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -662,41 +666,44 @@ callbacks.shift()();
 // jsFooter
 </script>
 <!-- jsChart -->
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartBubbleChartID1b4464d87f80"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartBubbleChartID247417007381"></script>
 <!-- divChart -->
-<div id="BubbleChartID1b4464d87f80" style="width: 500; height: 800px;">
+<div id="BubbleChartID247417007381" style="width: 500; height: 800px;">
 
 </div>
 <div id="about-the-graph-1" class="section level4">
-<h4>About the Graph</h4>
-<p>The data comes from individual players’ social statistics but is grouped by team.<br />
-The <strong>size</strong> of the bubble is based on the <strong>average audience attendance</strong>.<br />
-The <strong>hue</strong> of the bubble is based on the <strong>number of players</strong> on the team.<br />
-Users can view specific statistics by hovering the cursor over the bubble. Users can zoom in by clicking and dragging to select an area of interest. Users can reset the view by right-clicking.</p>
+<h4><strong>About the Graph</strong></h4>
+<p>Users can view specific statistics by hovering the cursor over the bubble.<br />
+Users can zoom in by clicking and dragging to select an area of interest.<br />
+Users can reset the view by right-clicking.<br />
+The data comes from individual players’ social statistics but is grouped by team.<br />
+The size of the bubble is based on the average audience attendance.<br />
+The hue of the bubble is based on the number of players on the team.</p>
+<p></br></p>
 </div>
 <div id="observations-1" class="section level4">
-<h4>Observations</h4>
-<p>Teams with <strong>less favorites than retweets</strong> saw <strong>lower audience attendance</strong>.<br />
-Teams with <strong>over 20 favorites</strong> saw <strong>higher audience attendance</strong>.<br />
-Teams with <strong>over 15 retweets</strong> saw <strong>higher audience attendance</strong>.<br />
-Teams with <strong>14 to 16 players</strong> had the <strong>highest audience attendance</strong>.<br />
-Teams with <strong>16 to 19 players</strong> had the <strong>average audience attendance</strong>.<br />
-Teams with <strong>12 to 14 players</strong> had the <strong>lowest audience attendance</strong>.</p>
+<h4><strong>Observations</strong></h4>
+<p>Teams with less favorites than retweets saw lower audience attendance.<br />
+Teams with over 20 favorites saw higher audience attendance.<br />
+Teams with over 15 retweets saw higher audience attendance.<br />
+Teams with 14 to 16 players had the highest audience attendance.<br />
+Teams with 16 to 19 players had the average audience attendance.<br />
+Teams with 12 to 14 players had the lowest audience attendance.</p>
 <hr />
 </div>
 </div>
 </div>
 <div id="question-3" class="section level2">
-<h2>Question 3</h2>
+<h2><strong>Question 3</strong></h2>
 <div id="does-a-players-number-of-twitter-followers-show-a-stronger-correlation-with-their-age-or-salary" class="section level3">
 <h3>Does a player’s number of Twitter followers show a stronger correlation with their age or salary?</h3>
 <!-- BubbleChart generated in R 3.5.1 by googleVis 0.6.3 package -->
-<!-- Wed Dec 05 02:16:40 2018 -->
+<!-- Wed Dec 05 10:38:26 2018 -->
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataBubbleChartID1b446cb5dad () {
+function gvisDataBubbleChartID24745d407401 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -1376,8 +1383,8 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartBubbleChartID1b446cb5dad() {
-var data = gvisDataBubbleChartID1b446cb5dad();
+function drawChartBubbleChartID24745d407401() {
+var data = gvisDataBubbleChartID24745d407401();
 var options = {};
 options["height"] = "800px";
 options["explorer"] = {actions:['dragToZoom', 'rightClickToReset']};
@@ -1389,7 +1396,7 @@ options["bubble"] = {textStyle:{color: 'none'}};
 options["title"] = "Correlation Between Twitter Followers, Age, and Salary (2017)";
 
     var chart = new google.visualization.BubbleChart(
-    document.getElementById('BubbleChartID1b446cb5dad')
+    document.getElementById('BubbleChartID24745d407401')
     );
     chart.draw(data,options);
     
@@ -1413,9 +1420,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartBubbleChartID1b446cb5dad);
+callbacks.push(drawChartBubbleChartID24745d407401);
 })();
-function displayChartBubbleChartID1b446cb5dad() {
+function displayChartBubbleChartID24745d407401() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -1438,33 +1445,34 @@ callbacks.shift()();
 // jsFooter
 </script>
 <!-- jsChart -->
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartBubbleChartID1b446cb5dad"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartBubbleChartID24745d407401"></script>
 <!-- divChart -->
-<div id="BubbleChartID1b446cb5dad" style="width: 500; height: 800px;">
+<div id="BubbleChartID24745d407401" style="width: 500; height: 800px;">
 
 </div>
 <div id="about-the-graph-2" class="section level4">
-<h4>About the Graph</h4>
-<p>The age data comes from players’ birthdays.<br />
-The salary data comes from players’ contracts.<br />
-The twitter data comes from players’ social statistics.<br />
-The <strong>size</strong> and <strong>hue</strong> of the bubble is based on a player’s salary in millions of dollars.<br />
-Users can view specific statistics by hovering the cursor over the bubble.<br />
+<h4><strong>About the Graph</strong></h4>
+<p>Users can view specific statistics by hovering the cursor over the bubble.<br />
 Users can zoom in by clicking and dragging to select an area of interest.<br />
-Users can reset the view by right-clicking.</p>
+Users can reset the view by right-clicking. The size and hue of the bubble is based on a player’s salary in millions of dollars.</p>
 <p></br></p>
 </div>
 <div id="observations-2" class="section level4">
-<h4>Observations</h4>
-<p>Players with <strong>higher salaries</strong> have a <strong>larger twitter following</strong> in general.<br />
-Players who are <strong>relatively young</strong> and <strong>relatively old</strong> have a <strong>smaller twitter following</strong> in general.</p>
-<p>Outliers include:<br />
-<strong>Stephen Curry</strong> who took a pay cut to help his team (less pay than expected)<br />
-<strong>Pau Gasol</strong> who is popular in Spain (more followers than expected)<br />
-<strong>Dirk Nowitzki</strong> who was a respected veteran star (higher pay than expected)</p>
+<h4><strong>Observations</strong></h4>
+<p>There is a stronger correlation between a player’s number of Twitter followers and their salary.<br />
+Players with higher salaries have a larger Twitter following overall.<br />
+Players who are relatively young or relatively old have a smaller Twitter following overall.</p>
+<p>Some notable outliers are… Stephen Curry, who took a pay cut to help his team (lower pay than expected)<br />
+Pau Gasol, who is popular in Spain (more followers than expected)<br />
+Dirk Nowitzki, who was a respected veteran star (higher pay than expected)</p>
+<hr />
+</div>
+</div>
+</div>
+<div id="conclusion" class="section level2">
+<h2><strong>Conclusion</strong></h2>
+<p>Our findings suggest that NBA players’ actions on social media do elicit responses from their followings. Based on our observations, teams whose players experienced more activity on Twitter generally saw higher audience attendance. Additionally, we noticed that fans are more engaged on social media with players who perform better on offense, have higher salaries, and are of the median age. Moving forward, these are the players who have the ability to use their online platforms to reach the greatest audience and leave a significant impact.</p>
 </center>
-</div>
-</div>
 </div>
 </div>
 
